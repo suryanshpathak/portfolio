@@ -49,12 +49,13 @@ export default function App() {
   // Variants allow you to define animation states and reuse them.
 
   // Fade up animation for sections on scroll
-  const fadeUpConfig = {
-    initial: { opacity: 0, y: 30 },
-    whileInView: { opacity: 1, y: 0 },
-    viewport: { once: true, amount: 0.2 }, // Animates once when 20% visible
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } // Custom "circOut" easing
-  };
+ // AFTER (Safe Config):
+const fadeUpConfig = {
+  initial: { opacity: 0, y: 20 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, amount: 0.05 }, // Triggers almost instantly on screen
+  transition: { duration: 0.5 }
+};
 
   // Stagger container for skills (children will animate one by one)
   const staggerContainer = {
