@@ -1,0 +1,140 @@
+<!-- PS C:\Users\patha\OneDrive\Desktop\portfolio\mpapp> git init
+Initialized empty Git repository in C:/Users/patha/OneDrive/Desktop/portfolio/mpapp/.git/
+PS C:\Users\patha\OneDrive\Desktop\portfolio\mpapp> git branch -M main
+PS C:\Users\patha\OneDrive\Desktop\portfolio\mpapp> git remote add origin https://github.com/suryansh_code/portfolio.git
+PS C:\Users\patha\OneDrive\Desktop\portfolio\mpapp> git remote add origin https://github.com/suryansh_code/portfolio.git
+error: remote origin already exists.
+PS C:\Users\patha\OneDrive\Desktop\portfolio\mpapp> git remote -v
+origin  https://github.com/suryansh_code/portfolio.git (fetch)
+origin  https://github.com/suryansh_code/portfolio.git (push)
+PS C:\Users\patha\OneDrive\Desktop\portfolio\mpapp> git add .
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'eslint.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'public/icons.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/App.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/App.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/assets/vite.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/index.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vite.config.js', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\patha\OneDrive\Desktop\portfolio\mpapp> git commit -m "Initial portfolio commit"
+[main (root-commit) c7afc2f] Initial portfolio commit
+ 21 files changed, 6670 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 eslint.config.js
+ create mode 100644 index.html
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 profile.jpg.webp
+ create mode 100644 public/favicon.svg
+ create mode 100644 public/icons.svg
+ create mode 100644 script.js
+ create mode 100644 src/App.css
+ create mode 100644 src/App.jsx
+ create mode 100644 src/assets/New Text Document (2).txt
+ create mode 100644 src/assets/New Text Document.txt
+ create mode 100644 src/assets/hero.png
+ create mode 100644 src/assets/react.svg
+ create mode 100644 src/assets/vite.svg
+ create mode 100644 src/index.css
+ create mode 100644 src/main.jsx
+ create mode 100644 style.css
+ create mode 100644 vite.config.js
+PS C:\Users\patha\OneDrive\Desktop\portfolio\mpapp> git push -u origin main --force
+remote: Repository not found.
+fatal: repository 'https://github.com/suryansh_code/portfolio.git/' not found
+PS C:\Users\patha\OneDrive\Desktop\portfolio\mpapp> git push -u origin main --force -->
+<!-- PS C:\Users\patha\OneDrive\Desktop\portfolio\mpapp> npm install gh-pages --save-dev
+
+added 44 packages, and audited 180 packages in 16s
+
+39 packages are looking for funding
+  run `npm fund` for details
+
+1 high severity vulnerability
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+PS C:\Users\patha\OneDrive\Desktop\portfolio\mpapp> git add .
+>> git commit -m "Add gh-pages deployment scripts"
+>> git push origin main
+>> npm run deploy
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vite.config.js', LF will be replaced by CRLF the next time Git touches it
+[main 9fe76e7] Add gh-pages deployment scripts
+ 3 files changed, 581 insertions(+), 15 deletions(-)
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 5.95 KiB | 1.98 MiB/s, done.
+Total 5 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/suryanshpathak/portfolio.git
+   c7afc2f..9fe76e7  main -> main
+
+> mpapp@0.0.0 predeploy
+> npm run build
+
+
+> mpapp@0.0.0 build
+> vite build
+
+vite v8.2.0 building client environment for production...
+<script src="script.js"> in "/index.html" can't be bundled without type="module" attribute
+✓ 3 modules transformed.
+computing gzip size...
+dist/index.html                         50.81 kB │ gzip: 10.24 kB
+dist/assets/profile.jpg-GyPjCy8q.webp  720.05 kB
+dist/assets/index-B34JOX4y.css          32.57 kB │ gzip:  6.58 kB
+
+✓ built in 392ms
+
+> mpapp@0.0.0 deploy
+> gh-pages -d dist
+
+Published
+PS C:\Users\patha\OneDrive\Desktop\portfolio\mpapp> git add . && git commit -m "Update portfolio" && git push origin main && npm run deploy
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+[main 67b8b23] Update portfolio
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/suryanshpathak/portfolio.git
+   9fe76e7..67b8b23  main -> main
+
+> mpapp@0.0.0 predeploy
+> npm run build
+
+
+> mpapp@0.0.0 build
+> vite build
+
+vite v8.2.0 building client environment for production...
+✓ 5 modules transformed.
+computing gzip size...
+dist/index.html                         50.86 kB │ gzip: 10.26 kB
+dist/assets/profile.jpg-GyPjCy8q.webp  720.05 kB
+dist/assets/index-B34JOX4y.css          32.57 kB │ gzip:  6.58 kB
+dist/assets/index-CrXS5aqO.js            9.46 kB │ gzip:  3.55 kB
+
+✓ built in 276ms
+
+> mpapp@0.0.0 deploy
+> gh-pages -d dist
+
+Published
+PS C:\Users\patha\OneDrive\Desktop\portfolio\mpapp>  -->
